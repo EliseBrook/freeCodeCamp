@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>freeCodeCamp Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter Your Name: <input id="name" name="name" type="text" required placeholder="Name"></label>
+       <label id="email-label">Enter Your Email: <input id="email" name="email" type="email" required placeholder="Email"></label>
+        <label id="number-label">Enter Your Age (Optional): <input id="number" name="number" type="number" min="13" max="120" placeholder="Age"></label>
+        <label for="current-role">Which option best describes your current role?
+          <select id="dropdown" name="current role">
+            <option value="">(select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Self-employed</option>
+            <option value="3">Full time</option>
+            <option value="4">Part time</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="yes">Would you recommend freeCodeCamp to a friend?<br><br><input id="yes" type="radio" name="reccommendation" class="inline" value="1"/> Yes</label>
+        <label for="no"><input id="no" type="radio" name="reccommendation" class="inline" value="2"/> No</label>
+        <label for="maybe"><input id="maybe" type="radio" name="reccommendation" class="inline" value="2"/> Maybe</label>
+        <label for="improvements"> What improvments would you like to see? <br><br>
+          <input id="improvements" type="checkbox" optional name="improvements" class="inline" value="1" /> Front-end projects<br>
+          <input id="improvements" type="checkbox" optional name="improvements" class="inline" value="2" /> Back-end projects<br>
+          <input id="improvements" type="checkbox" optional name="improvements" class="inline" value="3" /> Other<br>
+        </label>
+        <label for="comments">Any additional comments?
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Additional comments..."></textarea>
+        </label> 
+        <input type="submit" id="submit" />
+    </fieldset>
+    </form>
+    </body>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    </html>
